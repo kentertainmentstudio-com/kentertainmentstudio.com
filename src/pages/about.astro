@@ -1,0 +1,131 @@
+---
+/**
+ * About Page - K Entertainment Studio
+ */
+import Layout from '../layouts/Layout.astro';
+import CTABanner from '../components/react/CTABanner';
+import { motion } from 'framer-motion';
+---
+
+<Layout 
+  title="About Us"
+  description="Learn about K Entertainment Studio's mission to preserve the world's entertainment content forever with AI-powered intelligence and bank-grade security."
+>
+  <!-- Hero Section -->
+  <section class="section-padding hero-bg pt-32">
+    <div class="container-main">
+      <div class="max-w-4xl mx-auto text-center">
+        <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card text-sm text-[var(--color-primary)] mb-6">
+          About Us
+        </span>
+        <h1 class="heading-xl mb-6">
+          Building the <span class="gradient-text">Eternal Archive</span> for Entertainment
+        </h1>
+        <p class="text-xl text-[var(--color-text-secondary)] leading-relaxed">
+          K Entertainment Studio Inc. was founded with a singular vision: to ensure that 
+          humanity's entertainment heritage—from blockbuster films to indie creations—survives 
+          and thrives for generations to come.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Story Section -->
+  <section class="section-padding">
+    <div class="container-main">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="heading-md mb-6">Our Story</h2>
+          <div class="space-y-4 text-[var(--color-text-secondary)]">
+            <p>
+              In an era where digital content is created at unprecedented scale, the question 
+              of preservation becomes critical. Every day, irreplaceable creative works are lost 
+              to format obsolescence, storage failures, and organizational changes.
+            </p>
+            <p>
+              K Entertainment Studio was born from the understanding that the entertainment industry 
+              needed a purpose-built solution—one that combines the reliability of enterprise cloud 
+              infrastructure with the specialized needs of media preservation.
+            </p>
+            <p>
+              Today, we're building the definitive platform for entertainment preservation, 
+              serving major studios, independent creators, cultural institutions, and archives 
+              around the world.
+            </p>
+          </div>
+        </div>
+        <div class="glass-card-solid p-8 relative overflow-hidden">
+          <div class="absolute -top-20 -right-20 w-40 h-40 rounded-full bg-[var(--color-primary)]/20 blur-[60px]"></div>
+          <div class="relative z-10">
+            <div class="grid grid-cols-2 gap-6">
+              <div class="text-center">
+                <div class="text-4xl font-bold gradient-text mb-2">2024</div>
+                <div class="text-sm text-[var(--color-text-muted)]">Founded</div>
+              </div>
+              <div class="text-center">
+                <div class="text-4xl font-bold gradient-text mb-2">50+</div>
+                <div class="text-sm text-[var(--color-text-muted)]">Team Members</div>
+              </div>
+              <div class="text-center">
+                <div class="text-4xl font-bold gradient-text mb-2">6</div>
+                <div class="text-sm text-[var(--color-text-muted)]">Continents</div>
+              </div>
+              <div class="text-center">
+                <div class="text-4xl font-bold gradient-text mb-2">∞</div>
+                <div class="text-sm text-[var(--color-text-muted)]">Preservation Goal</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values Section -->
+  <section class="section-padding bg-[var(--color-bg-dark)]">
+    <div class="container-main">
+      <h2 class="heading-md text-center mb-12">Our Core Values</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="glass-card-solid p-8 card-hover">
+          <div class="w-12 h-12 rounded-xl bg-[var(--color-primary)]/10 flex items-center justify-center mb-6">
+            <svg class="w-6 h-6 text-[var(--color-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Trust & Security</h3>
+          <p class="text-[var(--color-text-secondary)]">
+            We treat every piece of content as irreplaceable. Our security practices 
+            exceed industry standards because your trust is our foundation.
+          </p>
+        </div>
+        <div class="glass-card-solid p-8 card-hover">
+          <div class="w-12 h-12 rounded-xl bg-[var(--color-accent-purple)]/10 flex items-center justify-center mb-6">
+            <svg class="w-6 h-6 text-[var(--color-accent-purple)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Innovation</h3>
+          <p class="text-[var(--color-text-secondary)]">
+            We constantly push the boundaries of what's possible in digital preservation, 
+            using AI and emerging technologies to solve tomorrow's challenges today.
+          </p>
+        </div>
+        <div class="glass-card-solid p-8 card-hover">
+          <div class="w-12 h-12 rounded-xl bg-[var(--color-accent-pink)]/10 flex items-center justify-center mb-6">
+            <svg class="w-6 h-6 text-[var(--color-accent-pink)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Passion for Culture</h3>
+          <p class="text-[var(--color-text-secondary)]">
+            We believe entertainment is culture, and culture deserves to live forever. 
+            Every film, song, and game tells a story worth preserving.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <CTABanner client:visible variant="compact" />
+</Layout>

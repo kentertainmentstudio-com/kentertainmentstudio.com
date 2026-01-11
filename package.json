@@ -2,13 +2,36 @@
   "name": "kentertainmentstudio.com",
   "type": "module",
   "version": "0.0.1",
+  "description": "K Entertainment Studio - The World's Centralized Intelligent Vault for All Entertainment Content",
+  "author": "K Entertainment Studio Inc.",
+  "license": "UNLICENSED",
+  "private": true,
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "tina:dev": "tinacms dev -c \"astro dev\"",
+    "tina:build": "tinacms build && astro build",
+    "lint": "eslint . --ext .ts,.tsx,.astro",
+    "format": "prettier --write ."
   },
   "dependencies": {
-    "astro": "^5.16.8"
+    "@astrojs/mdx": "^4.3.13",
+    "@astrojs/react": "^4.4.2",
+    "@radix-ui/react-dialog": "^1.1.15",
+    "@radix-ui/react-slot": "^1.2.4",
+    "@tailwindcss/vite": "^4.1.18",
+    "@types/react": "^19.2.8",
+    "@types/react-dom": "^19.2.3",
+    "astro": "^5.16.8",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.25.0",
+    "lucide-react": "^0.562.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "tailwind-merge": "^3.4.0",
+    "tailwindcss": "^4.1.18"
   }
 }

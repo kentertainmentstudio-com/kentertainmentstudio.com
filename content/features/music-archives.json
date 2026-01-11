@@ -1,0 +1,9 @@
+{
+  "title": "Music Archives",
+  "description": "Master recordings, album collections, and rare audio preserved in lossless formats with complete provenance tracking.",
+  "icon": "Music",
+  "size": "medium",
+  "gradient": "from-purple-500/20 to-pink-500/20",
+  "stats": "10M+ tracks",
+  "order": 2
+}

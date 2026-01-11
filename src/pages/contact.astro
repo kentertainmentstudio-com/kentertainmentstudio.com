@@ -1,0 +1,371 @@
+---
+/**
+ * Contact Page - K Entertainment Studio
+ * Early access form / waitlist with multi-tier options
+ */
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout 
+  title="Contact"
+  description="Join the K Entertainment Studio waitlist for early access to the world's most advanced entertainment preservation platform."
+>
+  <!-- Hero Section -->
+  <section class="section-padding hero-bg pt-32 pb-16">
+    <div class="container-main">
+      <div class="max-w-4xl mx-auto text-center">
+        <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card text-sm text-[var(--color-primary)] mb-6">
+          <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+          Now Accepting Applications
+        </span>
+        <h1 class="heading-xl mb-6">
+          Join the <span class="gradient-text">Waitlist</span>
+        </h1>
+        <p class="text-xl text-[var(--color-text-secondary)] leading-relaxed">
+          Be among the first to secure eternal preservation for your entertainment content. 
+          Early access members receive priority onboarding and founding member benefits.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Form Section -->
+  <section class="section-padding pt-0">
+    <div class="container-main">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        <!-- Form -->
+        <div class="glass-card-solid p-8 md:p-10">
+          <h2 class="text-2xl font-bold mb-6">Request Early Access</h2>
+          
+          <form id="waitlist-form" class="space-y-6" action="#" method="POST">
+            <!-- Name Fields -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="first-name" class="block text-sm font-medium mb-2">
+                  First Name <span class="text-red-400">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="first-name"
+                  name="firstName"
+                  required
+                  class="w-full px-4 py-3 bg-[var(--color-bg-glass)] border border-[var(--glass-border)] rounded-lg text-[var(--color-text-primary)] placeholder:text-[var(--color-text-muted)] focus:outline-none focus:border-[var(--color-primary)] transition-colors"
+                  placeholder="John"
+                />
+              </div>
+              <div>
+                <label for="last-name" class="block text-sm font-medium mb-2">
+                  Last Name <span class="text-red-400">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="last-name"
+                  name="lastName"
+                  required
+                  class="w-full px-4 py-3 bg-[var(--color-bg-glass)] border border-[var(--glass-border)] rounded-lg text-[var(--color-text-primary)] placeholder:text-[var(--color-text-muted)] focus:outline-none focus:border-[var(--color-primary)] transition-colors"
+                  placeholder="Doe"
+                />
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div>
+              <label for="email" class="block text-sm font-medium mb-2">
+                Work Email <span class="text-red-400">*</span>
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                class="w-full px-4 py-3 bg-[var(--color-bg-glass)] border border-[var(--glass-border)] rounded-lg text-[var(--color-text-primary)] placeholder:text-[var(--color-text-muted)] focus:outline-none focus:border-[var(--color-primary)] transition-colors"
+                placeholder="john@studio.com"
+              />
+            </div>
+
+            <!-- Organization -->
+            <div>
+              <label for="organization" class="block text-sm font-medium mb-2">
+                Organization / Studio
+              </label>
+              <input
+                type="text"
+                id="organization"
+                name="organization"
+                class="w-full px-4 py-3 bg-[var(--color-bg-glass)] border border-[var(--glass-border)] rounded-lg text-[var(--color-text-primary)] placeholder:text-[var(--color-text-muted)] focus:outline-none focus:border-[var(--color-primary)] transition-colors"
+                placeholder="Your company or studio name"
+              />
+            </div>
+
+            <!-- User Type -->
+            <div>
+              <label for="user-type" class="block text-sm font-medium mb-2">
+                I am a... <span class="text-red-400">*</span>
+              </label>
+              <select
+                id="user-type"
+                name="userType"
+                required
+                class="w-full px-4 py-3 bg-[var(--color-bg-glass)] border border-[var(--glass-border)] rounded-lg text-[var(--color-text-primary)] focus:outline-none focus:border-[var(--color-primary)] transition-colors"
+              >
+                <option value="" disabled selected>Select your role</option>
+                <option value="studio">Major Studio / Label</option>
+                <option value="indie-creator">Independent Creator</option>
+                <option value="archive">Archive / Institution</option>
+                <option value="production">Production Company</option>
+                <option value="distributor">Distributor</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <!-- Estimated Storage -->
+            <div>
+              <label for="storage" class="block text-sm font-medium mb-2">
+                Estimated Storage Needs
+              </label>
+              <select
+                id="storage"
+                name="storageNeeds"
+                class="w-full px-4 py-3 bg-[var(--color-bg-glass)] border border-[var(--glass-border)] rounded-lg text-[var(--color-text-primary)] focus:outline-none focus:border-[var(--color-primary)] transition-colors"
+              >
+                <option value="" disabled selected>Select estimated size</option>
+                <option value="under-1tb">Under 1 TB</option>
+                <option value="1-10tb">1 - 10 TB</option>
+                <option value="10-100tb">10 - 100 TB</option>
+                <option value="100tb-1pb">100 TB - 1 PB</option>
+                <option value="over-1pb">Over 1 PB</option>
+                <option value="unsure">Not sure yet</option>
+              </select>
+            </div>
+
+            <!-- Tier Selection -->
+            <div>
+              <label class="block text-sm font-medium mb-3">
+                Access Tier <span class="text-red-400">*</span>
+              </label>
+              <div class="space-y-3">
+                <label class="flex items-start gap-3 p-4 rounded-lg border border-[var(--glass-border)] cursor-pointer hover:border-[var(--color-primary)]/50 transition-colors">
+                  <input
+                    type="radio"
+                    name="tier"
+                    value="general"
+                    class="mt-1 accent-[var(--color-primary)]"
+                    checked
+                  />
+                  <div>
+                    <div class="font-medium">General Waitlist</div>
+                    <div class="text-sm text-[var(--color-text-muted)]">
+                      Join our general early access program
+                    </div>
+                  </div>
+                </label>
+                <label class="flex items-start gap-3 p-4 rounded-lg border border-[var(--glass-border)] cursor-pointer hover:border-[var(--color-primary)]/50 transition-colors">
+                  <input
+                    type="radio"
+                    name="tier"
+                    value="priority"
+                    class="mt-1 accent-[var(--color-primary)]"
+                  />
+                  <div>
+                    <div class="font-medium flex items-center gap-2">
+                      Priority Access
+                      <span class="px-2 py-0.5 rounded text-xs bg-[var(--color-primary)]/10 text-[var(--color-primary)]">
+                        Recommended
+                      </span>
+                    </div>
+                    <div class="text-sm text-[var(--color-text-muted)]">
+                      For studios and professional creators — expedited onboarding
+                    </div>
+                  </div>
+                </label>
+                <label class="flex items-start gap-3 p-4 rounded-lg border border-[var(--glass-border)] cursor-pointer hover:border-[var(--color-primary)]/50 transition-colors">
+                  <input
+                    type="radio"
+                    name="tier"
+                    value="vip"
+                    class="mt-1 accent-[var(--color-primary)]"
+                  />
+                  <div>
+                    <div class="font-medium flex items-center gap-2">
+                      VIP Enterprise Demo
+                      <span class="px-2 py-0.5 rounded text-xs bg-[var(--color-accent-gold)]/10 text-[var(--color-accent-gold)]">
+                        Enterprise
+                      </span>
+                    </div>
+                    <div class="text-sm text-[var(--color-text-muted)]">
+                      Request a personalized demo for large-scale needs (100TB+)
+                    </div>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <!-- Message -->
+            <div>
+              <label for="message" class="block text-sm font-medium mb-2">
+                Tell us about your preservation needs
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                class="w-full px-4 py-3 bg-[var(--color-bg-glass)] border border-[var(--glass-border)] rounded-lg text-[var(--color-text-primary)] placeholder:text-[var(--color-text-muted)] focus:outline-none focus:border-[var(--color-primary)] transition-colors resize-none"
+                placeholder="What content are you looking to preserve? Any specific requirements?"
+              ></textarea>
+            </div>
+
+            <!-- Submit -->
+            <button
+              type="submit"
+              class="w-full btn-primary text-lg py-4"
+            >
+              Request Early Access
+              <svg class="inline-block ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </button>
+
+            <p class="text-sm text-[var(--color-text-muted)] text-center">
+              By submitting, you agree to our 
+              <a href="/privacy" class="text-[var(--color-primary)] hover:underline">Privacy Policy</a> 
+              and 
+              <a href="/terms" class="text-[var(--color-primary)] hover:underline">Terms of Service</a>.
+            </p>
+          </form>
+        </div>
+
+        <!-- Info Panel -->
+        <div class="space-y-6">
+          <!-- What You Get -->
+          <div class="glass-card-solid p-8">
+            <h3 class="text-xl font-bold mb-6">Early Access Benefits</h3>
+            <ul class="space-y-4">
+              <li class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-lg bg-[var(--color-primary)]/10 flex items-center justify-center flex-shrink-0">
+                  <svg class="w-4 h-4 text-[var(--color-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="font-medium">Founding Member Pricing</div>
+                  <div class="text-sm text-[var(--color-text-muted)]">
+                    Lock in special rates for early supporters
+                  </div>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-lg bg-[var(--color-primary)]/10 flex items-center justify-center flex-shrink-0">
+                  <svg class="w-4 h-4 text-[var(--color-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="font-medium">Priority Onboarding</div>
+                  <div class="text-sm text-[var(--color-text-muted)]">
+                    Dedicated support for your first upload
+                  </div>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-lg bg-[var(--color-primary)]/10 flex items-center justify-center flex-shrink-0">
+                  <svg class="w-4 h-4 text-[var(--color-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="font-medium">Feature Input</div>
+                  <div class="text-sm text-[var(--color-text-muted)]">
+                    Help shape the platform with your feedback
+                  </div>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-lg bg-[var(--color-primary)]/10 flex items-center justify-center flex-shrink-0">
+                  <svg class="w-4 h-4 text-[var(--color-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="font-medium">Free Storage Credit</div>
+                  <div class="text-sm text-[var(--color-text-muted)]">
+                    Bonus storage for early access members
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="glass-card-solid p-8">
+            <h3 class="text-xl font-bold mb-6">Other Ways to Reach Us</h3>
+            <div class="space-y-4">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-lg bg-[var(--color-bg-glass)] flex items-center justify-center">
+                  <svg class="w-5 h-5 text-[var(--color-text-muted)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="text-sm text-[var(--color-text-muted)]">Email</div>
+                  <a href="mailto:hello@kentertainmentstudio.com" class="text-[var(--color-primary)] hover:underline">
+                    hello@kentertainmentstudio.com
+                  </a>
+                </div>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-lg bg-[var(--color-bg-glass)] flex items-center justify-center">
+                  <svg class="w-5 h-5 text-[var(--color-text-muted)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="text-sm text-[var(--color-text-muted)]">Headquarters</div>
+                  <div class="text-[var(--color-text-primary)]">
+                    Los Angeles, California
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Snippet -->
+          <div class="glass-card p-6">
+            <div class="flex items-start gap-3">
+              <div class="w-8 h-8 rounded-lg bg-[var(--color-accent-gold)]/10 flex items-center justify-center flex-shrink-0">
+                <svg class="w-4 h-4 text-[var(--color-accent-gold)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div>
+                <div class="font-medium mb-1">When will I get access?</div>
+                <div class="text-sm text-[var(--color-text-muted)]">
+                  We're onboarding members in waves. Priority and VIP tiers get 
+                  expedited access, typically within 2-4 weeks.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<script>
+  // Form handling (placeholder - connect to your backend)
+  const form = document.getElementById('waitlist-form');
+  
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    
+    const formData = new FormData(form as HTMLFormElement);
+    const data = Object.fromEntries(formData.entries());
+    
+    // TODO: Send to your backend/CRM
+    console.log('Form submitted:', data);
+    
+    // Show success message (placeholder)
+    alert('Thank you for your interest! We\'ll be in touch soon.');
+  });
+</script>

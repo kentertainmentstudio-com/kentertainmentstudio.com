@@ -422,8 +422,8 @@ const Utils = {
 // INITIALIZE ALL COMPONENTS
 // ===========================
 document.addEventListener('DOMContentLoaded', () => {
-    // Initialize age gate
-    new AgeGate();
+    // Age gate removed - display website only
+    // new AgeGate();
     
     // Initialize navigation
     new Navigation();

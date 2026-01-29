@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="K Entertainment Studio Inc. - Premium adult content production and innovative online gaming entertainment. Based in Quezon City, Philippines. 18+ Exclusive Showcase.">
+    <meta name="keywords" content="premium entertainment, adult content, gaming, Quezon City, Philippines">
+    <meta name="robots" content="noindex, nofollow">
+    <title>K Entertainment Studio Inc. | Premium Entertainment Redefined</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon placeholder -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🎭</text></svg>">
+</head>
+<body>
+    
+    <!-- ===========================
+         AGE VERIFICATION MODAL
+    =========================== -->
+    <div id="ageGate" class="age-gate" role="dialog" aria-labelledby="ageGateTitle" aria-modal="true">
+        <div class="age-gate-overlay"></div>
+        <div class="age-gate-content">
+            <div class="age-gate-icon">🔞</div>
+            <h2 id="ageGateTitle">Age Verification Required</h2>
+            <p class="age-gate-text">
+                This website features <strong>adult-oriented content</strong> and is strictly for individuals <strong>18 years and older</strong>.
+            </p>
+            <p class="age-gate-subtext">
+                By entering, you confirm that you are of legal age in your jurisdiction and agree to view adult content responsibly.
+            </p>
+            <div class="age-gate-buttons">
+                <button id="ageConfirm" class="btn-age-confirm" aria-label="Confirm you are 18 years or older">
+                    ✓ I Confirm I Am 18+
+                </button>
+                <button id="ageExit" class="btn-age-exit" aria-label="Exit this website">
+                    ✗ Exit
+                </button>
+            </div>
+            <p class="age-gate-footer">
+                Your confirmation will be stored for 30 days.
+            </p>
+        </div>
+    </div>
+
+    <!-- ===========================
+         NAVIGATION BAR
+    =========================== -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home" aria-label="K Entertainment Studio Inc. Home">
+                    K Entertainment Studio Inc.
+                </a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#milestones" class="nav-link">Milestones</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ===========================
+         HERO SECTION
+    =========================== -->
+    <section id="home" class="hero" role="banner">
+        <!-- Background: Replace with dark cinematic abstract image (neon red/gold/black luxury mood)
+             Suggested: Unsplash search "dark luxury abstract neon red gold black particles" -->
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal-fade-in">
+            <h1 class="hero-title">K Entertainment Studio Inc.</h1>
+            <p class="hero-tagline">Premium Entertainment Redefined</p>
+            <p class="hero-subtitle">
+                Adult Productions & Innovative Gaming Experiences
+            </p>
+            <p class="hero-location">
+                Quezon City, Philippines | 18+ Exclusive Showcase
+            </p>
+            <a href="#about" class="hero-cta">Discover More</a>
+        </div>
+        <div class="hero-scroll-indicator" aria-hidden="true">
+            <span>↓</span>
+        </div>
+    </section>
+
+    <!-- ===========================
+         ABOUT SECTION
+    =========================== -->
+    <section id="about" class="about section-padding" aria-labelledby="aboutTitle">
+        <div class="container">
+            <h2 id="aboutTitle" class="section-title reveal-fade-up">About Us</h2>
+            <div class="about-content">
+                <div class="about-text reveal-fade-up">
+                    <h3 class="about-subtitle">Redefining Premium Entertainment</h3>
+                    <p>
+                        Founded in <strong>2024</strong>, K Entertainment Studio Inc. is a trailblazing entertainment company based in <strong>Quezon City, National Capital Region, Philippines</strong>. We specialize in creating sophisticated, responsible entertainment experiences that push boundaries while maintaining the highest standards of quality and discretion.
+                    </p>
+                    <p>
+                        <strong>Our Mission:</strong> Creating sophisticated, responsible entertainment through premium adult content production, targeted marketing, and cutting-edge digital gaming concepts.
+                    </p>
+                    <h4 class="values-title">Core Values</h4>
+                    <ul class="values-list">
+                        <li><span class="value-icon">✨</span> <strong>Creativity</strong> – Innovative storytelling and production</li>
+                        <li><span class="value-icon">🔒</span> <strong>Discretion</strong> – Privacy and confidentiality paramount</li>
+                        <li><span class="value-icon">💎</span> <strong>Quality</strong> – Uncompromising excellence in every project</li>
+                        <li><span class="value-icon">🚀</span> <strong>Innovation</strong> – Pioneering next-generation entertainment</li>
+                        <li><span class="value-icon">⚖️</span> <strong>Responsibility</strong> – Ethical practices and compliance</li>
+                    </ul>
+                </div>
+                <div class="about-image reveal-fade-up">
+                    <!-- Symbolic image: abstract gold mask or luxury texture
+                         Replace with actual image: alt="Abstract gold mask symbolizing premium entertainment" -->
+                    <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=600&h=700&fit=crop&auto=format&q=80" 
+                         alt="Abstract luxury gold and black theatrical mask symbolizing premium entertainment" 
+                         loading="lazy"
+                         class="about-img">
+                    <div class="about-image-overlay"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================
+         SERVICES SECTION
+    =========================== -->
+    <section id="services" class="services section-padding" aria-labelledby="servicesTitle">
+        <div class="container">
+            <h2 id="servicesTitle" class="section-title reveal-fade-up">Our Services</h2>
+            <p class="section-subtitle reveal-fade-up">Exclusive offerings for discerning audiences</p>
+            
+            <div class="services-grid">
+                
+                <!-- Service 1: Adult Content Production -->
+                <article class="service-card glass-card reveal-fade-up" tabindex="0">
+                    <div class="service-image">
+                        <!-- Red velvet curtain abstract image
+                             Replace: alt="Red velvet curtain symbolizing premium adult content production" -->
+                        <img src="https://images.unsplash.com/photo-1503095396549-807759245b35?w=800&h=500&fit=crop&auto=format&q=80" 
+                             alt="Luxurious red velvet curtain representing premium adult content production" 
+                             loading="lazy"
+                             class="service-img">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">
+                            <span class="service-icon">🎬</span>
+                            Adult Content Production & Marketing
+                        </h3>
+                        <p class="service-description">
+                            Bespoke productions with world-class creators, strategic collaborations, and targeted marketing campaigns. We deliver premium adult entertainment that combines artistry with commercial success.
+                        </p>
+                        <ul class="service-features">
+                            <li>High-end cinematic productions</li>
+                            <li>Creator partnerships & talent management</li>
+                            <li>Multi-platform distribution strategies</li>
+                            <li>Brand development & audience engagement</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Service 2: Online Gaming & Canino Entertainment -->
+                <article class="service-card glass-card reveal-fade-up" tabindex="0">
+                    <div class="service-image">
+                        <!-- Neon game controller silhouette abstract
+                             Replace: alt="Neon game controller representing innovative gaming entertainment" -->
+                        <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=800&h=500&fit=crop&auto=format&q=80" 
+                             alt="Abstract neon game controller representing innovative gaming entertainment" 
+                             loading="lazy"
+                             class="service-img">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">
+                            <span class="service-icon">🎮</span>
+                            Online Games & Canino Entertainment
+                        </h3>
+                        <p class="service-description">
+                            Exciting digital entertainment platforms featuring canino-inspired experiences. <strong>Strictly promotional and entertainment purposes only</strong> – no real-money betting or gambling.
+                        </p>
+                        <ul class="service-features">
+                            <li>Cutting-edge gaming concepts</li>
+                            <li>Immersive canino-inspired experiences</li>
+                            <li>Social entertainment features</li>
+                            <li>Responsible gaming promotion</li>
+                        </ul>
+                        <p class="service-disclaimer">
+                            <em>For entertainment only. No real-money transactions.</em>
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================
+         MILESTONES SECTION
+    =========================== -->
+    <section id="milestones" class="milestones section-padding" aria-labelledby="milestonesTitle">
+        <div class="container">
+            <h2 id="milestonesTitle" class="section-title reveal-fade-up">Our Journey</h2>
+            <p class="section-subtitle reveal-fade-up">Key milestones in our evolution</p>
+            
+            <div class="timeline">
+                
+                <div class="timeline-item reveal-fade-up">
+                    <div class="timeline-marker">
+                        <div class="timeline-icon">🏢</div>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <h3 class="timeline-year">2024</h3>
+                        <h4 class="timeline-title">Founded in Quezon City</h4>
+                        <p class="timeline-description">
+                            K Entertainment Studio Inc. established with a vision to redefine premium entertainment in the Philippines.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal-fade-up">
+                    <div class="timeline-marker">
+                        <div class="timeline-icon">🎬</div>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <h3 class="timeline-year">2024 Q2</h3>
+                        <h4 class="timeline-title">First Premium Series Launch</h4>
+                        <p class="timeline-description">
+                            Released our inaugural premium adult content series, receiving critical acclaim and establishing our brand identity.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal-fade-up">
+                    <div class="timeline-marker">
+                        <div class="timeline-icon">🤝</div>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <h3 class="timeline-year">2024 Q3</h3>
+                        <h4 class="timeline-title">Strategic Creator Partnerships</h4>
+                        <p class="timeline-description">
+                            Formed exclusive collaborations with top-tier creators and talent, expanding our production capabilities.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal-fade-up">
+                    <div class="timeline-marker">
+                        <div class="timeline-icon">🎮</div>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <h3 class="timeline-year">2025 Q1</h3>
+                        <h4 class="timeline-title">Gaming Division Expansion</h4>
+                        <p class="timeline-description">
+                            Launched innovative online gaming concepts and canino-inspired entertainment platforms for promotional purposes.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal-fade-up">
+                    <div class="timeline-marker">
+                        <div class="timeline-icon">🌐</div>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <h3 class="timeline-year">2025 Q3</h3>
+                        <h4 class="timeline-title">International Reach</h4>
+                        <p class="timeline-description">
+                            Expanded distribution to international markets, establishing K Entertainment Studio as a global brand.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal-fade-up">
+                    <div class="timeline-marker">
+                        <div class="timeline-icon">🏆</div>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <h3 class="timeline-year">2026</h3>
+                        <h4 class="timeline-title">Industry Recognition</h4>
+                        <p class="timeline-description">
+                            Recognized for excellence in premium entertainment production and innovative responsible gaming initiatives.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal-fade-up">
+                    <div class="timeline-marker">
+                        <div class="timeline-icon">🚀</div>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <h3 class="timeline-year">Future</h3>
+                        <h4 class="timeline-title">Next-Generation Entertainment</h4>
+                        <p class="timeline-description">
+                            Continuing to innovate with cutting-edge technology and creative storytelling for discerning audiences worldwide.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================
+         PORTFOLIO SECTION
+    =========================== -->
+    <section id="portfolio" class="portfolio section-padding" aria-labelledby="portfolioTitle">
+        <div class="container">
+            <h2 id="portfolioTitle" class="section-title reveal-fade-up">Portfolio Showcase</h2>
+            <p class="section-subtitle reveal-fade-up">
+                Exclusive teasers for verified partners — <a href="#contact" class="inline-link">inquire for details</a>
+            </p>
+            
+            <div class="portfolio-grid">
+                
+                <!-- Portfolio Item 1 -->
+                <article class="portfolio-item glass-card reveal-fade-up" tabindex="0">
+                    <div class="portfolio-image">
+                        <!-- Heavily blurred red curtains abstract -->
+                        <img src="https://images.unsplash.com/photo-1503095396549-807759245b35?w=600&h=600&fit=crop&auto=format&q=80" 
+                             alt="Abstract blurred preview of premium adult series" 
+                             loading="lazy"
+                             class="portfolio-img blurred">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Premium Adult Series</h3>
+                        <p class="portfolio-category">Content Production</p>
+                    </div>
+                </article>
+
+                <!-- Portfolio Item 2 -->
+                <article class="portfolio-item glass-card reveal-fade-up" tabindex="0">
+                    <div class="portfolio-image">
+                        <!-- Blurred gold mask -->
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=600&fit=crop&auto=format&q=80" 
+                             alt="Abstract blurred gold luxury concept" 
+                             loading="lazy"
+                             class="portfolio-img blurred">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Luxury Productions</h3>
+                        <p class="portfolio-category">High-End Content</p>
+                    </div>
+                </article>
+
+                <!-- Portfolio Item 3 -->
+                <article class="portfolio-item glass-card reveal-fade-up" tabindex="0">
+                    <div class="portfolio-image">
+                        <!-- Neon game abstract -->
+                        <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=600&h=600&fit=crop&auto=format&q=80" 
+                             alt="Abstract blurred neon gaming concept" 
+                             loading="lazy"
+                             class="portfolio-img blurred">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Canino Concepts</h3>
+                        <p class="portfolio-category">Gaming Entertainment</p>
+                    </div>
+                </article>
+
+                <!-- Portfolio Item 4 -->
+                <article class="portfolio-item glass-card reveal-fade-up" tabindex="0">
+                    <div class="portfolio-image">
+                        <!-- Dark luxury abstract -->
+                        <img src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=600&h=600&fit=crop&auto=format&q=80" 
+                             alt="Abstract blurred dark luxury theme" 
+                             loading="lazy"
+                             class="portfolio-img blurred">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Creator Collaborations</h3>
+                        <p class="portfolio-category">Partnership Projects</p>
+                    </div>
+                </article>
+
+                <!-- Portfolio Item 5 -->
+                <article class="portfolio-item glass-card reveal-fade-up" tabindex="0">
+                    <div class="portfolio-image">
+                        <!-- Red neon glow -->
+                        <img src="https://images.unsplash.com/photo-1557672172-298e090bd0f1?w=600&h=600&fit=crop&auto=format&q=80" 
+                             alt="Abstract blurred red neon entertainment concept" 
+                             loading="lazy"
+                             class="portfolio-img blurred">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Digital Experiences</h3>
+                        <p class="portfolio-category">Interactive Entertainment</p>
+                    </div>
+                </article>
+
+                <!-- Portfolio Item 6 -->
+                <article class="portfolio-item glass-card reveal-fade-up" tabindex="0">
+                    <div class="portfolio-image">
+                        <!-- Gold particles abstract -->
+                        <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=600&h=600&fit=crop&auto=format&q=80" 
+                             alt="Abstract blurred gold particles luxury concept" 
+                             loading="lazy"
+                             class="portfolio-img blurred">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Exclusive Collections</h3>
+                        <p class="portfolio-category">Limited Editions</p>
+                    </div>
+                </article>
+
+                <!-- Portfolio Item 7 -->
+                <article class="portfolio-item glass-card reveal-fade-up" tabindex="0">
+                    <div class="portfolio-image">
+                        <!-- Purple/violet abstract -->
+                        <img src="https://images.unsplash.com/photo-1557683316-973673baf926?w=600&h=600&fit=crop&auto=format&q=80" 
+                             alt="Abstract blurred purple entertainment concept" 
+                             loading="lazy"
+                             class="portfolio-img blurred">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Gaming Platforms</h3>
+                        <p class="portfolio-category">Online Entertainment</p>
+                    </div>
+                </article>
+
+                <!-- Portfolio Item 8 -->
+                <article class="portfolio-item glass-card reveal-fade-up" tabindex="0">
+                    <div class="portfolio-image">
+                        <!-- Dark cinematic abstract -->
+                        <img src="https://images.unsplash.com/photo-1574169208507-84376144848b?w=600&h=600&fit=crop&auto=format&q=80" 
+                             alt="Abstract blurred dark cinematic concept" 
+                             loading="lazy"
+                             class="portfolio-img blurred">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Premium Marketing</h3>
+                        <p class="portfolio-category">Brand Campaigns</p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================
+         CONTACT SECTION
+    =========================== -->
+    <section id="contact" class="contact section-padding" aria-labelledby="contactTitle">
+        <div class="container">
+            <h2 id="contactTitle" class="section-title reveal-fade-up">Get In Touch</h2>
+            <p class="section-subtitle reveal-fade-up">
+                We reply within 24-48 hours
+            </p>
+            
+            <div class="contact-content">
+                
+                <!-- Contact Information -->
+                <div class="contact-info reveal-fade-up">
+                    <div class="contact-info-card glass-card">
+                        <h3 class="contact-info-title">Business Inquiries</h3>
+                        
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:info@kentertainment.studio" class="contact-link">info@kentertainment.studio</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Quezon City<br>National Capital Region, Philippines</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <span class="contact-icon">💬</span>
+                            <div>
+                                <h4>Instant Messaging</h4>
+                                <div class="social-links">
+                                    <a href="#" class="social-link" aria-label="WhatsApp" title="WhatsApp">
+                                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="social-link" aria-label="Telegram" title="Telegram">
+                                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-notice">
+                            <p><strong>Note:</strong> All communications are confidential. We respond to partnership and collaboration inquiries only.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form reveal-fade-up">
+                    <form class="form glass-card" id="contactForm" aria-label="Contact form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name *</label>
+                            <input type="text" id="name" name="name" class="form-input" required aria-required="true" placeholder="Your full name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email *</label>
+                            <input type="email" id="email" name="email" class="form-input" required aria-required="true" placeholder="your.email@example.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject *</label>
+                            <select id="subject" name="subject" class="form-input" required aria-required="true">
+                                <option value="">Select a subject...</option>
+                                <option value="partnership">Partnership Opportunity</option>
+                                <option value="collaboration">Collaboration Inquiry</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message *</label>
+                            <textarea id="message" name="message" class="form-input form-textarea" rows="6" required aria-required="true" placeholder="Tell us about your inquiry..."></textarea>
+                        </div>
+
+                        <button type="submit" class="form-submit">
+                            Send Message
+                        </button>
+
+                        <p class="form-notice">
+                            * Required fields. By submitting, you confirm you are 18+ and agree to professional communication.
+                        </p>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================
+         FOOTER
+    =========================== -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3 class="footer-logo">K Entertainment Studio Inc.</h3>
+                    <p class="footer-tagline">Premium Entertainment Redefined</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#privacy" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="#terms" class="footer-link">Terms of Service</a></li>
+                        <li><a href="#compliance" class="footer-link">2257 Compliance</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Connect</h4>
+                    <p>
+                        <a href="mailto:info@kentertainment.studio" class="footer-link">info@kentertainment.studio</a>
+                    </p>
+                    <p>Quezon City, NCR, Philippines</p>
+                </div>
+            </div>
+
+            <div class="footer-disclaimers">
+                <p class="disclaimer-strong">
+                    <strong>18+ ONLY</strong> | Adult-Oriented Content | Promotional Entertainment Only | No Real-Money Gaming
+                </p>
+                <p class="disclaimer-responsible">
+                    <strong>Game Responsibly</strong> – PAGCOR Responsible Gaming: 
+                    <a href="https://www.pagcor.ph" target="_blank" rel="noopener noreferrer" class="footer-link">www.pagcor.ph</a> | 
+                    <a href="mailto:keepitfun@pagcor.ph" class="footer-link">keepitfun@pagcor.ph</a>
+                </p>
+                <p class="disclaimer-compliance">
+                    <em>18 U.S.C. 2257 Record-Keeping Requirements Compliance Statement available upon request. All models are 18 years or older. All content is consensual and complies with applicable laws.</em>
+                </p>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 K Entertainment Studio Inc. | All Rights Reserved</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

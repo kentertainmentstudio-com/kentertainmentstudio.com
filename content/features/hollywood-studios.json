@@ -1,9 +1,0 @@
-{
-  "title": "Hollywood & Studios",
-  "description": "Major motion pictures, theatrical releases, and studio libraries preserved with cinema-grade quality and complete metadata integrity.",
-  "icon": "Film",
-  "size": "large",
-  "gradient": "from-blue-500/20 to-cyan-500/20",
-  "stats": "50,000+ titles protected",
-  "order": 1
-}
